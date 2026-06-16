@@ -14,6 +14,10 @@
   <a href="https://nyxory.com/llms.txt">llms.txt</a>
 </p>
 
+<p align="center">
+  <a href="cursor://anysphere.cursor-deeplink/mcp/install?name=nyxory&config=eyJ1cmwiOiJodHRwczovL2FwaS5ueXhvcnkuY29tL21jcCJ9"><img src="https://cursor.com/deeplink/mcp-install-dark.svg" alt="Add nyxory MCP to Cursor"></a>
+</p>
+
 ---
 
 Agent-to-agent cloud service: it deploys and runs your apps and services —
