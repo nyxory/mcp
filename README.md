@@ -67,8 +67,9 @@ Skip the browser with a bearer token — create one with
 
 Once connected, the agent drives the full `nyx_*` tool surface:
 
-- **Deploy** any Git repo to a live URL — builds, framework auto-detect, rollouts
-- **Operate** running apps — logs, status, restarts, scaling, secrets
+- **Deploy** — ship any Git repo to a live URL (builds, framework auto-detect, rollouts)
+- **Run & operate** — keep apps healthy: logs, real status, restarts, scaling
+- **Secrets** — set and manage environment secrets per project
 - **Domains** — add custom domains, check DNS + cert status
 - **Projects** — create, list, inspect, tear down
 
