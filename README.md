@@ -15,7 +15,11 @@
 </p>
 
 <p align="center">
-  <a href="cursor://anysphere.cursor-deeplink/mcp/install?name=nyxory&config=eyJ1cmwiOiJodHRwczovL2FwaS5ueXhvcnkuY29tL21jcCJ9"><img src="https://cursor.com/deeplink/mcp-install-dark.svg" alt="Add nyxory MCP to Cursor"></a>
+  <a href="#claude-code"><img src="https://raw.githubusercontent.com/nyxory/mcp/main/assets/btn-claude-code.png" alt="Connect in Claude Code" height="44"></a>
+  &nbsp;
+  <a href="#cursor"><img src="https://raw.githubusercontent.com/nyxory/mcp/main/assets/btn-cursor.png" alt="Connect in Cursor" height="44"></a>
+  &nbsp;
+  <a href="#codex"><img src="https://raw.githubusercontent.com/nyxory/mcp/main/assets/btn-codex.png" alt="Connect in Codex" height="44"></a>
 </p>
 
 ---
@@ -33,10 +37,8 @@ Works in **Claude Code, Claude Desktop, Cursor, Codex, and VS Code**.
 
 ## Connect
 
-Remote server — nothing to install. One OAuth sign-in in the browser on
-first use.
-
-**Endpoint:** `https://api.nyxory.com/mcp` (Streamable HTTP)
+Remote server — nothing to install. One OAuth sign-in in the browser on first
+use. **Endpoint:** `https://api.nyxory.com/mcp` (Streamable HTTP).
 
 ### Claude Code
 
@@ -44,15 +46,26 @@ first use.
 claude mcp add --transport http nyxory https://api.nyxory.com/mcp
 ```
 
-### Cursor / Claude Desktop / Codex / VS Code
+### Cursor
 
-Add to your MCP config:
+Add to your MCP config (Settings → MCP, or `~/.cursor/mcp.json`):
 
 ```json
 { "mcpServers": { "nyxory": { "url": "https://api.nyxory.com/mcp" } } }
 ```
 
-The first call opens the browser to sign in (OAuth 2.1 with PKCE).
+The same JSON works in **Claude Desktop** and **VS Code**. First call opens the
+browser to sign in (OAuth 2.1 with PKCE).
+
+### Codex
+
+```toml
+# ~/.codex/config.toml
+[mcp_servers.nyxory]
+url = "https://api.nyxory.com/mcp"
+```
+
+Then sign in: `codex mcp login nyxory`.
 
 ### Headless / CI
 
