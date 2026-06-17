@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/nyxory/mcp/main/assets/banner.png" alt="nyxory — you prompt, the agent builds, nyxory runs it" width="100%">
+  <img src="https://raw.githubusercontent.com/nyxory/mcp/main/assets/banner.png" alt="nyxory — your agent builds it, nyxory runs it" width="100%">
 </p>
 
 <h1 align="center">nyxory MCP</h1>
@@ -10,8 +10,7 @@
 
 <p align="center">
   <a href="https://nyxory.com">Website</a> ·
-  <a href="https://nyxory.com/agents">For agents</a> ·
-  <a href="https://nyxory.com/llms.txt">llms.txt</a>
+  <a href="https://nyxory.com/llms.txt">For agents</a>
 </p>
 
 <p align="center">
@@ -46,6 +45,9 @@ use. **Endpoint:** `https://api.nyxory.com/mcp` (Streamable HTTP).
 claude mcp add --transport http nyxory https://api.nyxory.com/mcp
 ```
 
+**[claude.ai](https://claude.ai/settings/connectors):** Settings → Connectors → *Add custom connector* → paste `https://api.nyxory.com/mcp`.
+**Claude Desktop:** one-click [`.mcpb` extension](https://github.com/nyxory/homebrew-tap/releases/latest/download/nyxory.mcpb).
+
 ### Cursor
 
 Add to your MCP config (Settings → MCP, or `~/.cursor/mcp.json`):
@@ -54,8 +56,8 @@ Add to your MCP config (Settings → MCP, or `~/.cursor/mcp.json`):
 { "mcpServers": { "nyxory": { "url": "https://api.nyxory.com/mcp" } } }
 ```
 
-The same JSON works in **Claude Desktop** and **VS Code**. First call opens the
-browser to sign in (OAuth 2.1 with PKCE).
+The same JSON works in **VS Code**. First call opens the browser to sign in
+(OAuth 2.1 with PKCE).
 
 ### Codex
 
@@ -94,8 +96,7 @@ connect) — or a bearer token for headless boxes.
 ## Links
 
 - Website — <https://nyxory.com>
-- For agents — <https://nyxory.com/agents>
-- llms.txt — <https://nyxory.com/llms.txt>
+- For agents — <https://nyxory.com/llms.txt>
 - npm (stdio bridge) — <https://www.npmjs.com/package/@nyxory/mcp>
 
 ## License
