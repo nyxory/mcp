@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/nyxory/mcp/main/assets/banner.png" alt="nyxory — your agent builds it, nyxory runs it" width="100%">
+  <a href="https://nyxory.com"><img src="https://raw.githubusercontent.com/nyxory/mcp/main/assets/banner.png" alt="nyxory — your agent builds it, nyxory runs it" width="100%"></a>
 </p>
 
 <h1 align="center">nyxory MCP</h1>
