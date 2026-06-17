@@ -13,14 +13,6 @@
   <a href="https://nyxory.com/llms.txt">For agents</a>
 </p>
 
-<p align="center">
-  <a href="#claude-code"><img src="https://raw.githubusercontent.com/nyxory/mcp/main/assets/btn-claude-code.png" alt="Connect in Claude Code" height="44"></a>
-  &nbsp;
-  <a href="#cursor"><img src="https://raw.githubusercontent.com/nyxory/mcp/main/assets/btn-cursor.png" alt="Connect in Cursor" height="44"></a>
-  &nbsp;
-  <a href="#codex"><img src="https://raw.githubusercontent.com/nyxory/mcp/main/assets/btn-codex.png" alt="Connect in Codex" height="44"></a>
-</p>
-
 ---
 
 Agent-to-agent cloud service: it deploys and runs your apps and services —
@@ -45,7 +37,7 @@ use. **Endpoint:** `https://api.nyxory.com/mcp` (Streamable HTTP).
 claude mcp add --transport http nyxory https://api.nyxory.com/mcp
 ```
 
-**[claude.ai](https://claude.ai/settings/connectors):** Settings → Connectors → *Add custom connector* → paste `https://api.nyxory.com/mcp`.
+**claude.ai:** [one-click add connector](https://claude.ai/customize/connectors?modal=add-custom-connector&connectorName=nyxory&connectorUrl=https%3A%2F%2Fapi.nyxory.com%2Fmcp) (opens the prefilled dialog).
 **Claude Desktop:** one-click [`.mcpb` extension](https://github.com/nyxory/homebrew-tap/releases/latest/download/nyxory.mcpb).
 
 ### Cursor
