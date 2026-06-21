@@ -1,0 +1,6 @@
+{
+  "nyxory": {
+    "url": "https://api.nyxory.com/mcp",
+    "enabled": true
+  }
+}
