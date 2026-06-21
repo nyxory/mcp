@@ -53,13 +53,23 @@ The same JSON works in **VS Code**. First call opens the browser to sign in
 
 ### Codex
 
+Add the remote server to `~/.codex/config.toml`:
+
 ```toml
-# ~/.codex/config.toml
 [mcp_servers.nyxory]
 url = "https://api.nyxory.com/mcp"
+enabled = true
 ```
 
-Then sign in: `codex mcp login nyxory`.
+Then sign in: `codex mcp login nyxory`. (`enabled = true` is load-bearing —
+Codex hides url-only entries without it.)
+
+Or install as a plugin — one marketplace add wires the same remote server:
+
+```bash
+codex plugin marketplace add nyxory/mcp
+codex plugin add nyxory@nyxory
+```
 
 ### Headless / CI
 

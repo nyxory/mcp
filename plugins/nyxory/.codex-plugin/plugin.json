@@ -1,0 +1,10 @@
+{
+  "name": "nyxory",
+  "version": "0.1.0",
+  "description": "Deploy and run your apps, straight from Codex — nyxory gives your agent a full deployment platform: ship any git repo to a live URL, stream logs, and manage custom domains and secrets through conversation.",
+  "author": "nyxory",
+  "homepage": "https://nyxory.com",
+  "repository": "https://github.com/nyxory/mcp",
+  "license": "MIT",
+  "mcpServers": "./.mcp.json"
+}
